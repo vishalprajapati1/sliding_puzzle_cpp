@@ -30,7 +30,7 @@ PuzzleState getState(int size) {
       }
       row.push_back(tile);
     }
-    grid.emplace_back(std::move(row));
+    grid.push_back(std::move(row));
   }
 
   PuzzleState puzzle(grid, cavity); 
