@@ -13,7 +13,6 @@ int main() {
   PuzzleState puzzle = getState(dimension);
   std::cout << "\n\n";
   Puzzle::solveAndPrint(puzzle);
-  //
 }
 
 PuzzleState getState(int size) { 
