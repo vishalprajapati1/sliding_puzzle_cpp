@@ -1,12 +1,12 @@
-#pragma once
 #include "puzzleState.h"
+#include "puzzleSolver.h"
 #include <array>
 #include <algorithm>
 #include <unordered_map>
 #include <queue>
 
-namespace Puzzle {
-void solveAndPrint(PuzzleState unsolved) {
+// namespace Puzzle {
+void Puzzle::solveAndPrint(PuzzleState unsolved) {
   // left 0 right 1 up 2 down 3
   const std::array<int, 4> k_directions = {0, 1, 2, 3};
 
@@ -60,4 +60,4 @@ void solveAndPrint(PuzzleState unsolved) {
     state.print();
   }
 }
-};  // namespace Puzzle
+// };  // namespace Puzzle
