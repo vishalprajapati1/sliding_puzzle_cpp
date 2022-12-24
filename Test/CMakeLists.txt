@@ -17,8 +17,10 @@ enable_testing()
 
 add_executable(
   test
-  Lib.cpp
-  hello_test.cpp
+  PuzzleState.cpp
+  PuzzleSolver.cpp
+  PuzzleGenerator.cpp
+  test.cpp
 )
 target_link_libraries(
   test
