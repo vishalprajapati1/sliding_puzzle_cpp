@@ -3,9 +3,10 @@
 #include <queue>
 #include <array>
 #include "puzzleState.h"
+#include "puzzleGenerator.h"
 
-namespace Puzzle {
-void generateAndPrint(int size, int moves_to_solve) {
+// namespace Puzzle {
+void Puzzle::generateAndPrint(int size, int moves_to_solve) {
   // left 0 right 1 up 2 down 3
   const std::array<int, 4> k_directions = {0, 1, 2, 3};
 
@@ -38,4 +39,4 @@ void generateAndPrint(int size, int moves_to_solve) {
   current_state.print();
   std::cout << "\nSolveable in " << depth << " moves.";
 }
-};
+// };
