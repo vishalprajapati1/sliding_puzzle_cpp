@@ -1,4 +1,4 @@
-#include "PuzzleState.h"
+#include "puzzleState.h"
 #include <vector>
 #include <iostream>
 
